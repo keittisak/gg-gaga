@@ -1,0 +1,13 @@
+.prompt-front{
+    font-family: 'Kanit', 'Prompt', 'Athiti', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+}
+.kanit-front{
+    margin: 0;
+    font-family: 'Prompt', 'Kanit', 'Athiti', sans-serif;
+}
+
+.form-label{
+    font-weight: 200;
+}
