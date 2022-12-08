@@ -65,7 +65,7 @@
             </div>
         @endforeach
     </div>
-    <div class="row">
+    {{-- <div class="row">
         @foreach ($overviewTotalCod as $key => $item)
         @php
             $date_title = 'วันนี้';    
@@ -88,7 +88,7 @@
                 </div>
             </div>
         @endforeach
-    </div>
+    </div> --}}
     <div class="row">
         <div class="col-md-6">
             <div class="card">

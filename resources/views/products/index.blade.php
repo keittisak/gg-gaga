@@ -78,7 +78,7 @@
                     render: function (data, type, full, meta){
                         if(data){
                             return `<a href="${data}" target="_blank">
-                                <span class="avatar" style="background-image: url(https://preview.tabler.io/demo/faces/male/9.jpg)"></span>
+                                <span class="avatar" style="background-image: url(${data})"></span>
                             </a>`;
                         }
                         return "-";
