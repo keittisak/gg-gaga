@@ -49,7 +49,7 @@
             <div class="row">
                 <div class="col col-login mx-auto">
                 <div class="text-center mb-6">
-                    <h1 class="h1">GG-GAGA</h1>
+                    <h1 class="h1">Back Office</h1>
                 </div>
                 <form class="card" action="{{ route('auth.login') }}" method="post">
                     @csrf

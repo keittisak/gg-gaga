@@ -536,7 +536,20 @@ class OrderController extends Controller
             foreach($request->ids as $id)
             {
                 $order = Order::findOrFail($id);
+                $details = $order->details;
                 $currentStatus = $order->status;
+
+                if ($currentStatus != $data['status'] && $data['status'] == 'shipped') {
+                    $detail = DB::transaction(function() use($request, $details) {
+                        $detailIDs = [];
+                        foreach ($details as $detail){
+                            $detailIDs[] = $detail->id;
+                            $detail->sku->stock->release($detail->quantity);
+                        };
+                        return $detailIDs;
+                    });
+                }
+
                 $result[] = $order->update(['status' => $data['status']]);
             }
             return $result;

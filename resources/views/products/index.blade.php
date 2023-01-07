@@ -120,11 +120,14 @@
                 dataType: "JSON",
                 data: {_token : '{{ csrf_token() }}', _method:'DELETE'},
                 beforeSend: function( xhr ) {
-                    
+                    loader.init();
                 },
                 success: function (res) {
+                    loader.close();
+                    table.draw();
                 },
                 error: function (request, status, error) {
+                    loader.close();
                 }
             });
         });

@@ -49,7 +49,7 @@
                 <div class="container">
                     <div class="page-heade text-center">
                         <h1 class="h1">
-                          GG-GAGA
+                          Back Office
                         </h1>
                     </div>
                     <div class="row">

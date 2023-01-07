@@ -33,7 +33,7 @@
             <li class="nav-item dropdown">
               <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-check-square"></i> รายงาน <i class="fas fa-caret-down ml-2"></i></a>
               <div class="dropdown-menu dropdown-menu-arrow">
-                <a href="{{ route('reports.daily-sales') }}" class="dropdown-item ">การขายประจำนวัน</a>
+                <a href="{{ route('reports.daily-sales') }}" class="dropdown-item ">การขายประจำวัน</a>
                 <a href="{{ route('reports.sales-by-product') }}" class="dropdown-item ">การขายตามสินค้า</a>
               </div>
             </li>
